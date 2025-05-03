@@ -12,6 +12,7 @@ public class BasicArrayCode {
         for(Integer i:arr){
             System.out.print(i+" ");
         }
+        System.out.println();
 //        return arr;
     }
     public static void reverseArray(int arr[]){
@@ -26,7 +27,22 @@ public class BasicArrayCode {
 //        return reversedArray;
 
     }
+
+    public static void reversedArrayOnIndex(int[] arr,int n){
+        ArrayList<Integer> reversedArray=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            reversedArray.add(arr[i]);
+        }
+        for(int i=arr.length-1;i>=n;i--){
+                reversedArray.add(arr[i]);
+        }
+        for (int i=0;i<reversedArray.size();i++){
+            System.out.print(reversedArray.get(i)+" ");
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int[] arr=new int[10];
         System.out.print("Enter data:");
         BasicArrayCode.arrayInput(arr);
@@ -36,5 +52,8 @@ public class BasicArrayCode {
         System.out.println();
         System.out.println("Reversed Array:");
         BasicArrayCode.reverseArray(arr);
+        System.out.println("Enter the element from where you want to reverse the array");
+        int idx=sc.nextInt();
+        BasicArrayCode.reversedArrayOnIndex(arr,idx);
     }
 }
