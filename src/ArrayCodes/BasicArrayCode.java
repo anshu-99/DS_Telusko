@@ -17,11 +17,10 @@ public class BasicArrayCode {
     }
     public static void reverseArray(int arr[]){
         int[] reversedArray=new int[arr.length];
-        for(int i=0;i<arr.length;){
-            for(int j=arr.length-1;j>=0;j--){
-                reversedArray[j]=arr[i];
-                i++;
-            }
+        int j=arr.length-1;
+        for(int i=0;i<arr.length;i++){
+            reversedArray[j]=arr[i];
+            j--;
         }
         BasicArrayCode.arrayOutput(reversedArray);
 //        return reversedArray;
