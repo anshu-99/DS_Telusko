@@ -27,6 +27,6 @@ public class LinearSearch {
         System.out.println("enter element to search");
         int n=sc.nextInt();
         System.out.println("Result - ");
-        LinearSearch.linearSearch(arr,n);
+        linearSearch(arr,n);
     }
 }

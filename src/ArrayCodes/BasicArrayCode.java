@@ -22,7 +22,7 @@ public class BasicArrayCode {
             reversedArray[j]=arr[i];
             j--;
         }
-        BasicArrayCode.arrayOutput(reversedArray);
+        arrayOutput(reversedArray);
 //        return reversedArray;
 
     }
@@ -45,15 +45,15 @@ public class BasicArrayCode {
         Scanner sc = new Scanner(System.in);
         int[] arr=new int[10];
         System.out.print("Enter data:");
-        BasicArrayCode.arrayInput(arr);
+        arrayInput(arr);
         System.out.println();
         System.out.print("Your Data:");
-        BasicArrayCode.arrayOutput(arr);
+        arrayOutput(arr);
         System.out.println();
         System.out.println("Reversed Array:");
-        BasicArrayCode.reverseArray(arr);
+        reverseArray(arr);
         System.out.println("Enter the element from where you want to reverse the array");
         int idx=sc.nextInt();
-        BasicArrayCode.reversedArrayOnIndex(arr,idx);
+        reversedArrayOnIndex(arr,idx);
     }
 }

@@ -22,6 +22,6 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] arr={12,43,55,10,11,40,85,20}; // 10,11,12,20,40,43,55,85
         System.out.println("Result-");
-        BinarySearch.binarySearch(arr,20);
+        binarySearch(arr,20);
     }
 }

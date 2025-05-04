@@ -20,14 +20,14 @@ public class SelectionSort {
                     smallIdx=j;
                 }
             }
-            SelectionSort.swap(arr,i,smallIdx);
+            swap(arr,i,smallIdx);
         }
-        SelectionSort.print(arr);
+        print(arr);
     }
 
     public static void main(String[] args) {
         int[] arr={12,32,11,10,56,65,78,87,71,36};
         System.out.println("Sorted Array");
-        SelectionSort.selectionSort(arr);
+        selectionSort(arr);
     }
 }

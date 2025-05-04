@@ -25,7 +25,7 @@ public class BubbleSort {
             System.out.println();
         }
         System.out.println("After Sorting:");
-        BubbleSort.printArray(arr);
+        printArray(arr);
     }
 
 
@@ -35,6 +35,6 @@ public class BubbleSort {
         BubbleSort.printArray(arr);
         System.out.println();
 //        System.out.println("After sorting");
-        BubbleSort.bubbleSort(arr);
+        bubbleSort(arr);
     }
 }
