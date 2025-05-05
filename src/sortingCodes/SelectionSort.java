@@ -1,5 +1,5 @@
 package sortingCodes;
-
+// assume that first index is smallest and compare with the rest elements and swap the smallest
 public class SelectionSort {
     public static void swap(int[] arr, int i, int j){
         int temp = arr[i];

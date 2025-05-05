@@ -1,5 +1,5 @@
 package sortingCodes;
-
+// swap the value using a temp variable
 public class BubbleSort {
     public static void printArray(int[] arr){
         for(Integer i:arr){

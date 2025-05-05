@@ -1,3 +1,4 @@
+// it must be sorted
 package searchingCodes;
 import java.util.Arrays;
 public class BinarySearch {
