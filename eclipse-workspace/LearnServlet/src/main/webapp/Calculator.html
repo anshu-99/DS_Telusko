@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .form-container {
+            background: #fff;
+            display: inline-block;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        input, select {
+            margin: 10px 0;
+            padding: 10px;
+            width: 90%;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            width: 50%;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Simple Calculator</h2>
+
+    <div class="form-container">
+        <form action="calculator" method="post">
+            <input type="number" name="num1" placeholder="Enter first number" required><br>
+            <input type="number" name="num2" placeholder="Enter second number" required><br>
+            
+            <select name="symbol" required>
+                <option value="">Select operation</option>
+                <option value="+">Addition (+)</option>
+                <option value="-">Subtraction (-)</option>
+                <option value="*">Multiplication (*)</option>
+                <option value="/">Division (/)</option>
+                <option value="%">Modulus (%)</option>
+            </select><br>
+
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+
+    <h2>Square Calculator</h2>
+
+    <div class="form-container">
+        <form action="square" method="get">
+            <input type="number" name="squareNum" placeholder="Enter a number to square" required><br>
+            <input type="submit" value="Calculate">
+        </form>
+        <h2>Req Dispatcher</h2>
+        <form action="reqDis" method="get">
+        	<input type="text" name="reqDis" placeholder="Tyoe your Name..">
+        	<input type="submit">
+        </form>
+    </div>
+    
+
+</body>
+</html>

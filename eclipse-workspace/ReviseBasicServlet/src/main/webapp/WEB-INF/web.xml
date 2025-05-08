@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ReviseBasicServlet</display-name>
+  
+  <servlet>
+  	<servlet-name>Parent</servlet-name>
+  	<servlet-class>com.anshu.ParentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Parent</servlet-name>
+  	<url-pattern>/parent</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>Name</servlet-name>
+  	<servlet-class>com.anshu.NameServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Name</servlet-name>
+  	<url-pattern>/name</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>Age</servlet-name>
+  	<servlet-class>com.anshu.AgeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Age</servlet-name>
+  	<url-pattern>/age</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>Email</servlet-name>
+  	<servlet-class>com.anshu.EmailServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Email</servlet-name>
+  	<url-pattern>/email</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
