@@ -43,5 +43,25 @@
   	<url-pattern>/printDispatcher</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>sendRedirect</servlet-name>
+  	<servlet-class>com.calculator.SendRedirect</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>sendRedirect</servlet-name>
+  	<url-pattern>/sendRedirect</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>getResponse</servlet-name>
+  	<servlet-class>com.calculator.GetResponseOfSendRedirect</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>getResponse</servlet-name>
+  	<url-pattern>/sq</url-pattern>
+  </servlet-mapping>
+  
   
 </web-app>
